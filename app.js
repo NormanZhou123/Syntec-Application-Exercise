@@ -143,6 +143,16 @@ window.onload = function () {
                 document.getElementById("modal-ter").classList.remove("is-active");
             }, 1000);
         }
+        let formData = {
+            "name": {
+              "first": employee.firstName,
+              "last": employee.lastName
+            },
+            "jobTitle": employee.jobTitle,
+            "photoURL": employee.photoURL
+          }
+        console.log(formData);
+        return formData;
     });
 
     // Sorting drawer switch
