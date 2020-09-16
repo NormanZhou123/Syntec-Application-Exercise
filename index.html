@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Syntec App Exercise</title>
+    <link href="bulma.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+                <a class="navbar-item">
+                    Appointments
+                </a>
+                <a class="navbar-item">
+                    Clients
+                </a>
+                <a class="navbar-item">
+                    Employees
+                </a>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item">Sign Out</a>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Employees</h1>
+            <div class="select level-right">
+                <select id="order">
+                    <option value="0">order by first</option>
+                    <option value="1">order by last</option>
+                </select>
+            </div>
+            <br />
+            <article id="employees">
+                <!-- Render Content Here -->
+
+                <div class="container is-fluid" id="content">
+
+                </div>
+
+            </article>
+
+            <div class="modal" id="modal-ter">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Add Employee</p>
+                        <button class="delete" aria-label="close" id="close1"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-primary" id="first" type="text" placeholder="first name">
+                                <p class="red firstNameWarn">*Please fill in firstName </p>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-info" id="last" type="text" placeholder="last name">
+                                <p class="red lastNameWarn">*Please fill in lastName </p>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-success" id="jobTitle" type="text" placeholder="jobTitle">
+                                <p class="red jobTitleWarn">*Please fill in jobTitle </p>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-warning" id="photoURL" type="text" placeholder="photoURL">
+                                <p class="red photoURLWarn">*Please fill in photoURL </p>
+                                <p class="red only">*This employee already exists, please do not add it repeatedly</p>
+                                <p class="red green">Successful</p>
+                            </div>
+                        </div>
+                    </section>
+                    <footer class="modal-card-foot">
+                        <button class="button is-success" id="save">Save</button>
+                        <button class="button" id="close">Cancel</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

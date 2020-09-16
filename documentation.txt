@@ -1,0 +1,8 @@
+
+1. Assume that drag and drop is used to change the order of the list
+2. Assume that sorting should be by first or last name
+3. What should be the size limit of image?
+4. Is there any input limit for first name, last name and job title?
+5. I made a default image for those who doesn't have image url.
+6. Assume that there is no new employees with the same name and title to avoid duplicate.
+7. The access to the API has?been?blocked?by?CORS?policy:?No?'Access-Control-Allow-Origin'?header?is?present?on?the?requested?resource. Found a way to solve this at: https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe.

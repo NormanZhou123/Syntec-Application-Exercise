@@ -1,0 +1,41 @@
+.list-image {
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image {
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.myImg {
+    height: 63px !important;
+    width: 63px !important;
+}
+
+.buttonRight {
+    float: right;
+}
+
+.red {
+    color: red;
+    display: none;
+}
+
+.green {
+    color: green !important;
+    font-size:27px;
+}
+
+.listitem {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+  }
